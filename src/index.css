@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.input-pattern {
+  border: 1px solid #0084d1;
+  border-radius: 6px;
+  caret-color: #0084d1;
+  padding: 4px 8px;
+  transition: 3ms;
+}
+
+.input-pattern:focus {
+  outline: none;
+  border: 2px solid #0084d1;
+}
