@@ -3,7 +3,7 @@ export const allRounds = [
     student: "سامي",
     theme: "red",
     rounds: [
-      { month: "11/2025", department: "بهتيم" },
+      { month: "11/2025", department: "برة - بهتيم" },
       { month: "12/2025", department: "Crown" },
       { month: "1/2026", department: "Endo" },
       { month: "2/2026", department: "N/A" },
@@ -21,7 +21,7 @@ export const allRounds = [
     student: "عاصم",
     theme: "yellow",
     rounds: [
-      { month: "11/2025", department: "بهتيم" },
+      { month: "11/2025", department: "برة - بهتيم" },
       { month: "12/2025", department: "Crown" },
       { month: "1/2026", department: "Endo" },
       { month: "2/2026", department: "Surgery" },

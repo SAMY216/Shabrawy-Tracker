@@ -2,42 +2,43 @@ import { useEffect, useState } from "react";
 import { allRounds, themeColors, allMonths } from "./utils/data";
 
 export default function App() {
-  const [department, setDepartment] = useState("");
-  const [student, setStudent] = useState("");
   const [month, setMonth] = useState("");
+  const [searchItem, setSearchItem] = useState("");
   const [rounds, setRounds] = useState([]);
 
   useEffect(() => {
-    var result = allRounds;
-    if (month != "") {
-      const finalRounds = allRounds
+    let result = allRounds;
+
+    if (month !== "") {
+      result = allRounds
         .map((std) => ({
           ...std,
           rounds: std.rounds.filter((rnd) => rnd.month === month),
         }))
         .filter((std) => std.rounds.length > 0);
-
-      result = finalRounds;
     }
-    if (department === "" && student === "") setRounds(result);
-    else if (department !== "") {
-      const finalRounds = result
+
+    if (searchItem.trim() !== "") {
+      const searchLower = searchItem.toLowerCase();
+
+      result = result
         .map((std) => ({
           ...std,
-          rounds: std.rounds.filter((rnd) =>
-            rnd.department.toLowerCase().includes(department.toLowerCase())
+          rounds: std.rounds.filter(
+            (rnd) =>
+              std.student.toLowerCase().includes(searchLower) ||
+              rnd.department.toLowerCase().includes(searchLower)
           ),
         }))
-        .filter((std) => std.rounds.length > 0);
-
-      setRounds(finalRounds);
-    } else if (student !== "") {
-      const finalRounds = result.filter((std) =>
-        std.student.toLowerCase().includes(student.toLowerCase())
-      );
-      setRounds(finalRounds);
+        .filter(
+          (std) =>
+            std.student.toLowerCase().includes(searchLower) ||
+            std.rounds.length > 0
+        );
     }
-  }, [student, department, month]);
+
+    setRounds(result);
+  }, [searchItem, month]);
 
   return (
     <div className="w-full h-full bg-gray-300 px-4 md:px-10 lg:px-14 min-h-[100vh]">
@@ -72,47 +73,23 @@ export default function App() {
             ))}
           </select>
         </div>
-        {/* Search By Department */}
+        {/* Search By Department or Name */}
         <div className="bg-white rounded-lg p-4 w-fit flex flex-col gap-4 items-center">
           <label
-            htmlFor="department"
+            htmlFor="search-item"
             className="font-medium text-lg md:text-xl lg:text-2xl"
           >
-            Search By Department
+            Search
           </label>
           <input
-            id="department"
-            name="department"
+            id="search-item"
             type="text"
-            placeholder="Department"
+            placeholder="Name or Department"
             className="input-pattern text-base md:text-lg lg:text-xl"
-            value={department}
+            value={searchItem}
             onChange={(e) => {
               if (e.target.value.length > 25) return;
-              if (student != "") setStudent("");
-              setDepartment(e.target.value);
-            }}
-          />
-        </div>
-        {/* Search By Name */}
-        <div className="bg-white rounded-lg p-4 w-fit flex flex-col gap-4 items-center">
-          <label
-            htmlFor="student"
-            className="font-medium text-lg md:text-xl lg:text-2xl"
-          >
-            Search By Name
-          </label>
-          <input
-            id="student"
-            name="student"
-            type="text"
-            placeholder="Name"
-            className="input-pattern text-base md:text-lg lg:text-xl"
-            value={student}
-            onChange={(e) => {
-              if (e.target.value.length > 25) return;
-              if (department != "") setDepartment("");
-              setStudent(e.target.value);
+              setSearchItem(e.target.value);
             }}
           />
         </div>
