@@ -3,7 +3,7 @@ export const allRounds = [
     student: "سامي",
     theme: "red",
     rounds: [
-      { month: "11/2025", department: "برة - بهتيم" },
+      { month: "11/2025", department: "برة - اهالينا" },
       { month: "12/2025", department: "Crown" },
       { month: "1/2026", department: "Endo" },
       { month: "2/2026", department: "N/A" },
@@ -21,7 +21,7 @@ export const allRounds = [
     student: "عاصم",
     theme: "yellow",
     rounds: [
-      { month: "11/2025", department: "برة - بهتيم" },
+      { month: "11/2025", department: "برة - الترفيهي - العبور" },
       { month: "12/2025", department: "Crown" },
       { month: "1/2026", department: "Endo" },
       { month: "2/2026", department: "Surgery" },
@@ -39,7 +39,7 @@ export const allRounds = [
     student: "زياد وليد",
     theme: "green",
     rounds: [
-      { month: "11/2025", department: "برة" },
+      { month: "11/2025", department: "برة - اهالينا" },
       { month: "12/2025", department: "Crown" },
       { month: "1/2026", department: "Endo" },
       { month: "2/2026", department: "N/A" },
@@ -57,7 +57,7 @@ export const allRounds = [
     student: "بيبسي",
     theme: "blue",
     rounds: [
-      { month: "11/2025", department: "برة" },
+      { month: "11/2025", department: "برة - اهالينا" },
       { month: "12/2025", department: "Crown" },
       { month: "1/2026", department: "Endo" },
       { month: "2/2026", department: "برة" },
