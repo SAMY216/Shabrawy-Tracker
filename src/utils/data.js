@@ -90,7 +90,7 @@ export const allRounds = [
     ],
   },
   {
-    student: "الدبدوب 🧸",
+    student: "سيف عمرو",
     theme: "pink",
     rounds: [
       { month: "11/2025", department: "X-ray" },
@@ -99,6 +99,24 @@ export const allRounds = [
       { month: "2/2026", department: "Prosthesis" },
       { month: "3/2026", department: "Operative" },
       { month: "4/2026", department: "Medicine" },
+      { month: "5/2026", department: "N/A" },
+      { month: "6/2026", department: "Surgery" },
+      { month: "7/2026", department: "Crown" },
+      { month: "8/2026", department: "Endo" },
+      { month: "9/2026", department: "Comp-1" },
+      { month: "10/2026", department: "Comp-2" },
+    ],
+  },
+  {
+    student: "سيف وليد",
+    theme: "cyan",
+    rounds: [
+      { month: "11/2025", department: "Pedo" },
+      { month: "12/2025", department: "Prothesis" },
+      { month: "1/2026", department: "Operative" },
+      { month: "2/2026", department: "Medicine" },
+      { month: "3/2026", department: "X-ray" },
+      { month: "4/2026", department: "Ortho" },
       { month: "5/2026", department: "N/A" },
       { month: "6/2026", department: "Surgery" },
       { month: "7/2026", department: "Crown" },
@@ -116,6 +134,7 @@ export const themeColors = {
   yellow: "bg-yellow-400", //
   emerald: "bg-emerald-400", //
   pink: "bg-pink-400", //
+  cyan: "bg-cyan-400", //
   neutral: "bg-neutral-400",
 };
 
