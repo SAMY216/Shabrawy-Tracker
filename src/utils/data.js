@@ -71,14 +71,52 @@ export const allRounds = [
       { month: "10/2026", department: "X-ray" },
     ],
   },
+  {
+    student: "مشرف",
+    theme: "emerald",
+    rounds: [
+      { month: "11/2025", department: "X-ray" },
+      { month: "12/2025", department: "Ortho" },
+      { month: "1/2026", department: "Surgery" },
+      { month: "2/2026", department: "Pedo" },
+      { month: "3/2026", department: "Operative" },
+      { month: "4/2026", department: "Medicine" },
+      { month: "5/2026", department: "Prosthesis" },
+      { month: "6/2026", department: "Surgery" },
+      { month: "7/2026", department: "Crown" },
+      { month: "8/2026", department: "Endo" },
+      { month: "9/2026", department: "Comp-1" },
+      { month: "10/2026", department: "Comp-2" },
+    ],
+  },
+  {
+    student: "الدبدوب 🧸",
+    theme: "pink",
+    rounds: [
+      { month: "11/2025", department: "X-ray" },
+      { month: "12/2025", department: "Ortho" },
+      { month: "1/2026", department: "Pedo" },
+      { month: "2/2026", department: "Prosthesis" },
+      { month: "3/2026", department: "Operative" },
+      { month: "4/2026", department: "Medicine" },
+      { month: "5/2026", department: "N/A" },
+      { month: "6/2026", department: "Surgery" },
+      { month: "7/2026", department: "Crown" },
+      { month: "8/2026", department: "Endo" },
+      { month: "9/2026", department: "Comp-1" },
+      { month: "10/2026", department: "Comp-2" },
+    ],
+  },
 ];
 
 export const themeColors = {
-  red: "bg-red-400",
-  blue: "bg-blue-400",
-  green: "bg-green-400",
-  yellow: "bg-yellow-400",
-  purple: "bg-purple-400",
+  red: "bg-red-400", //
+  blue: "bg-blue-400", //
+  green: "bg-green-400", //
+  yellow: "bg-yellow-400", //
+  emerald: "bg-emerald-400", //
+  pink: "bg-pink-400", //
+  slate: "bg-slate-400",
 };
 
 export const allMonths = [
