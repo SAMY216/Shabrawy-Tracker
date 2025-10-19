@@ -1,7 +1,7 @@
 export const allRounds = [
   {
     student: "سامي",
-    theme: "red",
+    theme: "slate",
     rounds: [
       { month: "11/2025", department: "برة - اهالينا" },
       { month: "12/2025", department: "Crown" },
@@ -110,13 +110,13 @@ export const allRounds = [
 ];
 
 export const themeColors = {
-  red: "bg-red-400", //
+  slate: "bg-slate-400", //
   blue: "bg-blue-400", //
   green: "bg-green-400", //
   yellow: "bg-yellow-400", //
   emerald: "bg-emerald-400", //
   pink: "bg-pink-400", //
-  slate: "bg-slate-400",
+  neutral: "bg-neutral-400",
 };
 
 export const allMonths = [
