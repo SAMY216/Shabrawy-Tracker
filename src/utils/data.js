@@ -143,6 +143,24 @@ export const allRounds = [
       { month: "10/2026", department: "Crown-2" },
     ],
   },
+  {
+    student: "سيف اياد",
+    theme: "violet",
+    rounds: [
+      { month: "11/2025", department: "Comp-1" },
+      { month: "12/2025", department: "Comp-2" },
+      { month: "1/2026", department: "Comp-3" },
+      { month: "2/2026", department: "Comp-4" },
+      { month: "3/2026", department: "Surgery" },
+      { month: "4/2026", department: "N/A" },
+      { month: "5/2026", department: "Pedo" },
+      { month: "6/2026", department: "N/A" },
+      { month: "7/2026", department: "N/A" },
+      { month: "8/2026", department: "Surgery" },
+      { month: "9/2026", department: "Comp-5" },
+      { month: "10/2026", department: "Comp-6" },
+    ],
+  },
 ];
 
 export const themeColors = {
@@ -153,6 +171,7 @@ export const themeColors = {
   emerald: "bg-emerald-400", //
   pink: "bg-pink-400", //
   cyan: "bg-cyan-400", //
+  violet: "bg-violet-400", //
   neutral: "bg-neutral-50", //
 };
 
