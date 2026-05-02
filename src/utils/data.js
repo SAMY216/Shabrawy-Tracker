@@ -99,7 +99,7 @@ export const allRounds = [
       { month: "2/2026", department: "Prosthesis" },
       { month: "3/2026", department: "Operative" },
       { month: "4/2026", department: "Medicine" },
-      { month: "5/2026", department: "N/A" },
+      { month: "5/2026", department: "Surgery" },
       { month: "6/2026", department: "Surgery" },
       { month: "7/2026", department: "Crown" },
       { month: "8/2026", department: "Endo" },
